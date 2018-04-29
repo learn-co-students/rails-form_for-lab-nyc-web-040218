@@ -1,0 +1,13 @@
+<h1>Editing: <%= @schoolclass.title %></h1>
+
+<%= form_for(@schoolclass) do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title%><br><br>
+
+	<%= f.label :room_number %>
+	<%= f.number_field :room_number %><br><br>
+	<%= f.submit "Update School class" %>
+<% end %>
+
+<br><br>
+<%= link_to "Cancel", school_class_path(@schoolclass) %>
