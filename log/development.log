@@ -528,3 +528,366 @@ Processing by SchoolclassesController#index as HTML
   [1m[35mSchoolclass Load (0.6ms)[0m  SELECT "schoolclasses".* FROM "schoolclasses"
   Rendered schoolclasses/index.html.erb within layouts/application (7.0ms)
 Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:48:23 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.1ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `schoolclasss_path' for #<#<Class:0x007ff56a717070>:0x007ff56a69f160>
+Did you mean?  schoolclasses_path
+               schoolclass_path
+               schoolclasses_url
+               schoolclass_url):
+    2: 
+    3: <%= link_to "Edit >", edit_schoolclass_path(@schoolclass) %>
+    4: <br><br>
+    5: <%= link_to "< back", schoolclasss_path %>
+  app/views/schoolclasses/show.html.erb:5:in `_app_views_schoolclasses_show_html_erb__377971968870959327_70346014519000'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.5ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:48:47 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.1ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:49:00 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `schoolclassses_path' for #<#<Class:0x007ff56a717070>:0x007ff56e42c3e8>
+Did you mean?  schoolclasses_path
+               schoolclass_path
+               schoolclasses_url):
+    2: 
+    3: <%= link_to "Edit >", edit_schoolclass_path(@schoolclass) %>
+    4: <br><br>
+    5: <%= link_to "< back", schoolclassses_path %>
+  app/views/schoolclasses/show.html.erb:5:in `_app_views_schoolclasses_show_html_erb__377971968870959327_70346043234320'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.7ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:49:06 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.1ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:49:09 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:49:10 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.1ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:51:31 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 28.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:51:36 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[35mSchoolclass Load (0.2ms)[0m  SELECT "schoolclasses".* FROM "schoolclasses"
+  Rendered schoolclasses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:51:38 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.3ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:51:39 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.3ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:51:42 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:52:48 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.1ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:52:54 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.3ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:53:03 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.2ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:53:28 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.1ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:53:30 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.2ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/1/edit" for ::1 at 2018-04-28 21:53:32 -0400
+Processing by SchoolclassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolclass Load (0.1ms)[0m  [1mSELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered schoolclasses/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/schoolclasses/1" for ::1 at 2018-04-28 21:54:42 -0400
+Processing by SchoolclassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolclass Load (0.4ms)[0m  SELECT  "schoolclasses".* FROM "schoolclasses" WHERE "schoolclasses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered schoolclasses/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:54:43 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (73.5ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `new_schoolclass' for #<#<Class:0x007ff56d96bbe8>:0x007ff56e1cdef8>
+Did you mean?  new_schoolclass_url):
+     9: </ul>
+    10: 
+    11: <br><br><br>
+    12: <%= link_to "Create a Class", new_schoolclass %>
+  app/views/schoolclasses/index.html.erb:12:in `_app_views_schoolclasses_index_html_erb___3269497782129753087_70346045547680'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.3ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:54:48 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[35mSchoolclass Load (0.5ms)[0m  SELECT "schoolclasses".* FROM "schoolclasses"
+  Rendered schoolclasses/index.html.erb within layouts/application (55.2ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `new_schoolclass' for #<#<Class:0x007ff56d96bbe8>:0x007ff56f18df28>
+Did you mean?  new_schoolclass_url):
+     9: </ul>
+    10: 
+    11: <br><br><br>
+    12: <%= link_to "Create a Class", new_schoolclass %>
+  app/views/schoolclasses/index.html.erb:12:in `_app_views_schoolclasses_index_html_erb___3269497782129753087_70346053805380'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.1ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:54:53 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.1ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (51.2ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `new_schoolclasses' for #<#<Class:0x007ff56d96bbe8>:0x007ff56a73f598>
+Did you mean?  new_schoolclass_url
+               new_schoolclass_path
+               @schoolclasses):
+     9: </ul>
+    10: 
+    11: <br><br><br>
+    12: <%= link_to "Create a Class", new_schoolclasses %>
+  app/views/schoolclasses/index.html.erb:12:in `_app_views_schoolclasses_index_html_erb___3269497782129753087_70346014847120'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.2ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:55:33 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[35mSchoolclass Load (0.2ms)[0m  SELECT "schoolclasses".* FROM "schoolclasses"
+  Rendered schoolclasses/index.html.erb within layouts/application (64.7ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `new_schoolclass_link' for #<#<Class:0x007ff56d96bbe8>:0x007ff568f53330>
+Did you mean?  new_schoolclass_url
+               new_schoolclass_path):
+     9: </ul>
+    10: 
+    11: <br><br><br>
+    12: <%= link_to "Create a Class", new_schoolclass_link %>
+  app/views/schoolclasses/index.html.erb:12:in `_app_views_schoolclasses_index_html_erb___3269497782129753087_70346002304320'
+
+
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/brie/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.0ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:55:41 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.5ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:55:44 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-28 21:56:15 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-28 21:56:18 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:56:22 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:57:02 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:57:07 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:57:09 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[36mSchoolclass Load (0.2ms)[0m  [1mSELECT "schoolclasses".* FROM "schoolclasses"[0m
+  Rendered schoolclasses/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:57:11 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses" for ::1 at 2018-04-28 21:57:26 -0400
+Processing by SchoolclassesController#index as HTML
+  [1m[35mSchoolclass Load (0.2ms)[0m  SELECT "schoolclasses".* FROM "schoolclasses"
+  Rendered schoolclasses/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:57:28 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schoolclasses/new" for ::1 at 2018-04-28 21:58:18 -0400
+Processing by SchoolclassesController#new as HTML
+  Rendered schoolclasses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-28 21:58:23 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-28 21:58:25 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-28 21:58:26 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-28 21:58:27 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.5ms)
