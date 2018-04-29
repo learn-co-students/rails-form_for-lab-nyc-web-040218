@@ -1,17 +1,17 @@
 class StudentsController < ApplicationController
   
   def index
-    @students = Student.all
+    @students = all_students
   end
 
   def show
     @student = find_student_id
-    @students = Student.all
+    @students = all_students
   end
 
   def new
     @student = Student.new
-    @students = Student.all
+    @students = all_students
   end
 
   def create
@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
 
   def edit
     @student = find_student_id
-    @students = Student.all
+    @students = all_students
   end
 
 	def update
@@ -32,6 +32,10 @@ class StudentsController < ApplicationController
   end
   
   private
+
+  def all_students
+    Student.all
+  end
 
   def find_student_id
     Student.find(params[:id])
