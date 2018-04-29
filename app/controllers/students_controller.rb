@@ -6,10 +6,12 @@ class StudentsController < ApplicationController
 
   def show
     @student = find_student_id
+    @students = Student.all
   end
 
   def new
     @student = Student.new
+    @students = Student.all
   end
 
   def create
@@ -19,7 +21,8 @@ class StudentsController < ApplicationController
   end
 
   def edit
-		@student = find_student_id
+    @student = find_student_id
+    @students = Student.all
   end
 
 	def update

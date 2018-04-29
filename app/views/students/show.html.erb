@@ -1,1 +1,14 @@
-<h1><%= @student.to_s %></h1>
+
+<h2>This Student</h2>
+<div>
+<%= link_to @student.to_s, edit_student_path(@student) %>
+</div>
+
+<br>
+
+<h2>All Students List</h2>
+<div>
+  <% @students.each do |student| %>
+    <div><%= link_to student.to_s, student_path(student) %></div>
+  <% end %>
+</div>
