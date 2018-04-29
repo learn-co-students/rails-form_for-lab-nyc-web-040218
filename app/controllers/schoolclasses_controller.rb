@@ -1,6 +1,6 @@
 class SchoolclassesController < ApplicationController
     def index
-        @schoolclasses = Schoolclass.all
+        @schoolclasses = SchoolClass.all
     end
 
     def new
@@ -24,6 +24,6 @@ class SchoolclassesController < ApplicationController
 
     private
         def find_class(param)
-            Schoolclass.find(param)
+            SchoolClass.find(param)
         end
 end
