@@ -4,6 +4,7 @@ class SchoolClassesController < ApplicationController
     end
 
     def new
+        @schoolclass = SchoolClass.new
     end
 
     def create
