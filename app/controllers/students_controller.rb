@@ -12,6 +12,9 @@ class StudentsController < ApplicationController
     end
 
     def create
+		@student = Student.create(post_params(:first_name, :last_name))
+		#@student.save
+		redirect_to student_path(@student)
     end
 
     def show
@@ -25,4 +28,8 @@ class StudentsController < ApplicationController
         def get_students
             @students = Student.all
         end
+        
+        def post_params(*args)
+			params.require(:student).permit(*args)
+		end
 end

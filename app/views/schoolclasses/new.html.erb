@@ -1,4 +1,10 @@
 <h1>Create a new School Class:</h1>
 
+<%= form_for(@schoolclass) do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :room_number %>
+	<%= f.submit %> 
+<% end %>
+
 <br><br><br>
 <%= link_to "Cancel", schoolclasses_path %>

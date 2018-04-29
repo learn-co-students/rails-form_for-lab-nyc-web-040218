@@ -7,6 +7,8 @@ class SchoolclassesController < ApplicationController
     end
 
     def create
+    	@schoolclass = SchoolClass.create(post_params(:title, :room_number))
+		redirect_to schoolclass_path(@schoolclass)
     end
 
     def edit
@@ -26,4 +28,8 @@ class SchoolclassesController < ApplicationController
         def find_class(param)
             SchoolClass.find(param)
         end
+        
+        def post_params(*args)
+			params.require(:schoolclass).permit(*args)
+		end
 end
