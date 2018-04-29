@@ -3,10 +3,10 @@
 <ul>
 <% @schoolclasses.each do |schoolclass| %>
     <li>
-        <%= link_to schoolclass.to_s, schoolclass_path(schoolclass) %>
+        <%= link_to schoolclass.to_s, school_class_path(schoolclass) %>
     </li>
 <% end %>
 </ul>
 
 <br><br><br>
-<%= link_to "Create a Class", new_schoolclass_path %>
+<%= link_to "Create a Class", new_school_class_path %>
