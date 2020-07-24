@@ -1,0 +1,18 @@
+
+<h2>Edit Student Form</h2>
+
+<%= form_for(@student) do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <%= f.submit %>
+<% end %>
+<br>
+
+<h2>All Students List</h2>
+<div>
+  <% @students.each do |student| %>
+    <div><%= link_to student.to_s, student_path(student) %></div>
+  <% end %>
+</div>
